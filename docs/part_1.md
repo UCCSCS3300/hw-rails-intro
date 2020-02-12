@@ -40,5 +40,6 @@ $ cd /root/environment/homework/rottenpotatoes-rails-intro
 $ git commit -am "part 1 complete"
 $ git push heroku master
 ```
+You must be in the rottenpotatoes-rails-intro directory to deploy to Heroku because that's the home of the application (and the corresponding git configuration)
 
 Next: [Part 2: Filter the list of movies by rating](part_2.md)
