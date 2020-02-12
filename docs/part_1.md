@@ -36,6 +36,7 @@ You'll submit the code for this part after you deploy on Heroku and when you sup
 For now, commit all the changes you have made so far (see the beginning of this part), and deploy them to check that they work on Heroku before moving on to the next section:
 
 ```sh
+$ cd /root/environment/homework/rottenpotatoes-rails-intro
 $ git commit -am "part 1 complete"
 $ git push heroku master
 ```
