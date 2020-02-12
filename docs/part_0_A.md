@@ -7,8 +7,7 @@ $ cd /root/environment/homework
 $ git clone https://github.com/UCCSCS3300/rottenpotatoes-rails-intro.git
 $ rm -rf /root/environment/homework/rottenpotatoes-rails-intro/.git
 ```
-
-Whenever you start working on a Rails project, the first thing you should do is to run Bundler, to make sure all the app's gems are installed.  Switch to the app's root directory (presumably `rottenpotatoes-rails-intro`) and run `bundle install --without production` (you only need to specify `--without production` the first time, as this setting will be remembered on future runs of Bundler for this project).
+Whenever you start working on a Rails project, the first thing you should do is to run Bundler, to make sure all the app's gems are installed.  Switch to the app's root directory (in this case `rottenpotatoes-rails-intro`) and run `bundle install --without production` (you only need to specify `--without production` the first time, as this setting will be remembered on future runs of Bundler for this project).
 
 Finally, get the local database created:
 
@@ -40,7 +39,9 @@ $ rake db:seed
 </details>
 <br />
 
-At this point you should be able to run the app locally (`rails server -b 0.0.0.0`) and navigating to `http://localhost:3000/movies` in your browser.  **For those using Docker Toolbox, go to `http://192.168.99.100:3000/movies` as in prior examples**  **If you are using Codenvy, use the play button and navigate to the link generated within codenvy**.
+At this point you should be able to run the app locally (`rails server -b 0.0.0.0`) and navigate to `http://localhost:3000/movies` in your browser.  
+**For those using Docker Toolbox, go to `http://192.168.99.100:3000/movies` as in prior examples**  
+**If you are using Codenvy, use the play button and navigate to the link generated within codenvy**.
 Note: If you stop the server by hitting control-C, you will no longer be able to visit the RottenPotatoes site. Start the server again by repeating the last command. 
 
 Welcome to RottenPotatoes!
