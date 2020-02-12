@@ -1,6 +1,9 @@
 
 ## Part 0 (B): Preparation: deploy to Heroku
 
+First, make sure you are in the `rottenpotatoes-rails-intro` directory.
+Run `git init`. Note that this .git info will ONLY be linked to Heroku- NOT your class repository. 
+
 If you have deployed to Heroku before, just create a new app container with `heroku create`.  If this is your first time deploying to Heroku, you will need to do two things.  First, sign up for a free [Heroku account](http://heroku.com).  Then set up `ssh` keys to securely communicate with Heroku for app deployments.  The three basic commands you need are the following, but see the [Heroku page](https://devcenter.heroku.com/articles/heroku-cli) for more details.
 
 ```sh
@@ -16,6 +19,14 @@ $ heroku create
 ```
 
 Heroku will assign your app a whimsical name such as `luminous-coconut-237`; once your app is deployed, you would access it at `http://luminous-coconut-237.herokuapp.com`.  You can login to the Heroku website if you want to change the name of your app.
+
+Confirm the new git associations: `git remote -v`
+You should ONLY see fetch and push associated with heroku. These links automatically are built when you ran `heroku create`.
+
+```sh
+$ git add *
+$ git commit
+```
 
 Finally, we deploy our app to Heroku:
 
