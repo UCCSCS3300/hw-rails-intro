@@ -1,6 +1,9 @@
 
 ## Part 3: Remember the sorting and filtering settings (70 points)
 
+Reminder: Every time you make a semi-significant change, push your code to github IF AND ONLY IF it is working. 
+Go to your homework folder, run `git status`, confirm that changed files are staged for commit. `git commit -m "SOME MEANINGFUL MESSAGE"` `git push origin master` PUSH OFTEN!!
+
 OK, so the user can now click on the "Movie Title" or "Release Date" headings and see movies sorted by those columns, and can additionally use the checkboxes to restrict the listing to movies with certain ratings only. And we have preserved RESTfulness, because the URI itself always contains the parameters that will control sorting and filtering. 
 
 The last step is to remember these settings. That is, if the user has selected any combination of column sorting and restrict-by-rating constraints, and then the user clicks to see the details of one of the movies (for example), when she clicks the Back to Movie List on the detail page, the movie listing should "remember" her sorting and filtering settings from before. 
@@ -17,9 +20,9 @@ If a user unchecks all checkboxes, use the settings stored in the `session[]` ha
 
 To be RESTful, we want to preserve the property that a URI that results in a sorted/filtered view always contains the corresponding sorting/filtering parameters. Therefore, if you find that the incoming URI is lacking the right `params[]` and you're forced to fill them in from the `session[]`, the RESTful thing to do is to `redirect_to` the new URI containing the appropriate parameters. There is an important corner case to keep in mind here, though: if the previous action had placed a message in the `flash[]` to display after a redirect to the movies page, your additional redirect will delete that message and it will never appear, since the `flash[]` only survives across a single redirect. To fix this, use `flash.keep` right before your additional redirect. 
 
-### When you're done with this part
+### Finishing Part 3
 
-Deploy to Heroku by following the same process as before:
+Push to git and deploy to Heroku by following the same process as before:
 
 ```sh
 $ git commit -am "part 3 complete"
