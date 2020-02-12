@@ -3,9 +3,9 @@
 The actual RottenPotatoes starter app you will use is in another public repo: [UCCSCS3300/rottenpotatoes-rails-intro](https://github.com/UCCSCS3300/rottenpotatoes-rails-intro). Clone that repo to your homework directory and remove the .git directory inside of the rottenpotatoes-rails-intro folder.
 
 ```sh
-$ cd /environment/homework
+$ cd /root/environment/homework
 $ git clone https://github.com/UCCSCS3300/rottenpotatoes-rails-intro.git
-$ rm -rf /environment/homework/rottenpotatoes-rails-intro/.git
+$ rm -rf /root/environment/homework/rottenpotatoes-rails-intro/.git
 ```
 
 Whenever you start working on a Rails project, the first thing you should do is to run Bundler, to make sure all the app's gems are installed.  Switch to the app's root directory (presumably `rottenpotatoes-rails-intro`) and run `bundle install --without production` (you only need to specify `--without production` the first time, as this setting will be remembered on future runs of Bundler for this project).
