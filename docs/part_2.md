@@ -1,5 +1,8 @@
 ## Part 2: Filter the list of movies by rating (15 points)
 
+Reminder: Every time you make a semi-significant change, push your code to github IF AND ONLY IF it is working. 
+Go to your homework folder, run `git status`, confirm that changed files are staged for commit. `git commit -m "SOME MEANINGFUL MESSAGE"` `git push origin master` PUSH OFTEN!!
+
 Enhance RottenPotatoes as follows. At the top of the All Movies listing, add some checkboxes that allow the user to filter the list to show only movies with certain MPAA ratings: 
 
 ![](https://github.com/saasbook/hw-rails-intro/blob/master/filter-screenshot.png)
@@ -44,9 +47,11 @@ The first time the user visits the page, all checkboxes should be checked by def
 
 Reminder: Don't put code in your views! Set up an instance variable in the controller that remembers which ratings were actually used to do the filtering, and make that variable available to the view so that the appropriate boxes can be pre-checked when the index view is reloaded. 
 
-You'll submit this part after you deploy on Heroku and when you supply your Heroku deployment URL in part 3.  But you can commit all the changes you have made so far to git, deploy them to Heroku and check that they work on Heroku before moving on to the next section:
+## Finishing Part 2
+You'll submit this part after you deploy on Heroku and when you supply your Heroku deployment URL in part 3.  But you can commit all the changes you have made so far to git (see instructions at the beginning of part 2), deploy them to Heroku and check that they work on Heroku before moving on to the next section:
 
 ```sh
+$ cd /root/environment/homework/rottenpotatoes-rails-intro
 $ git commit -am "part 2 complete"
 $ git push heroku master
 ```
