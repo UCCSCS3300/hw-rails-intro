@@ -25,6 +25,7 @@ To be RESTful, we want to preserve the property that a URI that results in a sor
 Push to git and deploy to Heroku by following the same process as before:
 
 ```sh
+$ cd /root/environment/homework/rottenpotatoes-rails-intro
 $ git commit -am "part 3 complete"
 $ git push heroku master
 ```
