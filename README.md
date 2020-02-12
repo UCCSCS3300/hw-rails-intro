@@ -28,6 +28,7 @@ There are 3 parts required:
 * Push final work on github (all source code)
 
 * Push to Heroku
+
 Deploying your finished app to Heroku by the homework deadline is part
 of the grading process. Even if you have code checked in that works
 properly, you still need to also deploy it to Heroku to get full
@@ -41,7 +42,9 @@ submit `http://your-app.herokuapp.com` **and NOT**
 `https://your-app.herokuapp.com`. 
 
 * Submit on Canvas in tar.gz format
+
   As an extra backup/safety net, submit all code in tar.gz format on Canvas.  
+  
 ```sh
 ` cd /root/environment/homework/rottenpotatoes-rails-intro/
 ` tar -czf yourUCCSname_hw2.tar.gz *
