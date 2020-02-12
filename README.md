@@ -24,17 +24,29 @@ changed in each file since your last “good” commit.
 * Part 3: [Remember the sorting and filtering settings (70 points)](docs/part_3.md)
 
 # How to submit when you're all done
+There are 3 parts required:
+* Push final work on github (all source code)
 
+* Push to Heroku
 Deploying your finished app to Heroku by the homework deadline is part
 of the grading process. Even if you have code checked in that works
 properly, you still need to also deploy it to Heroku to get full
 credit. 
 
 Once you're confident the functionality works correctly on Heroku,
-submit the 
-URI of your deployed Heroku app in a text file with no other
+submit the URI of your deployed Heroku app in a text file with no other
 contents. 
-
 **Please be careful** to use **http** and not **https**, that is, 
 submit `http://your-app.herokuapp.com` **and NOT**
 `https://your-app.herokuapp.com`. 
+
+* Submit on Canvas in tar.gz format
+  As an extra backup/safety net, submit all code in tar.gz format on Canvas.  
+```sh
+` cd /root/environment/homework/rottenpotatoes-rails-intro/
+` tar -czf yourUCCSname_hw2.tar.gz *
+```
+Submit your tar.gz file.
+
+Your final submission on Canvas includes 1) your tar.gz file and 2) a text file containing only the URI of your deployed Heroku App
+
