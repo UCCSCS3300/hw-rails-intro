@@ -1,5 +1,7 @@
 ## Part 0 (A): Preparation: get RottenPotatoes running locally
 
+Before you start, make sure your local workspace is synched with your class private git account. From the homework directory, do a `git pull origin master` and confirm there are no errors. 
+
 The actual RottenPotatoes starter app you will use is in another public repo: [UCCSCS3300/rottenpotatoes-rails-intro](https://github.com/UCCSCS3300/rottenpotatoes-rails-intro). Clone that repo to your homework directory and remove the .git directory inside of the rottenpotatoes-rails-intro folder.
 
 ```sh
@@ -45,5 +47,14 @@ At this point you should be able to run the app locally (`rails server -b 0.0.0.
 Note: If you stop the server by hitting control-C, you will no longer be able to visit the RottenPotatoes site. Start the server again by repeating the last command. 
 
 Welcome to RottenPotatoes!
+
+Lastly, back the working framework up in github. 
+```sh
+cd /root/environment/homework
+git add rottenpotatoes-rails-intro/
+git status //Make sure all the new files are tracked AND on stage for being committed!!
+git commit -m “Initial HW2"
+git push origin master
+```
 
 Next: [Part 0 (B): Preparation: deploy to Heroku](part_0_B.md)
