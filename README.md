@@ -46,8 +46,8 @@ submit `http://your-app.herokuapp.com` **and NOT**
   As an extra backup/safety net, submit all code in tar.gz format on Canvas.  
   
 ```sh
-` cd /root/environment/homework/rottenpotatoes-rails-intro/
-` tar -czf yourUCCSname_hw2.tar.gz *
+$ cd /root/environment/homework/rottenpotatoes-rails-intro/
+$ tar -czf yourUCCSname_hw2.tar.gz *
 ```
 Submit your tar.gz file.
 
