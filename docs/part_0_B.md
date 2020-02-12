@@ -1,6 +1,10 @@
 
 ## Part 0 (B): Preparation: deploy to Heroku
 
+First, make sure you are in your `homework` folder!
+Next, initialize a new repo for use only by Heroku.
+`git init`
+
 If you have deployed to Heroku before, just create a new app container with `heroku create`.  If this is your first time deploying to Heroku, you will need to do two things.  First, sign up for a free [Heroku account](http://heroku.com).  Then set up `ssh` keys to securely communicate with Heroku for app deployments.  The three basic commands you need are the following, but see the [Heroku page](https://devcenter.heroku.com/articles/heroku-cli) for more details.
 
 ```sh
