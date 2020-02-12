@@ -29,6 +29,8 @@ $ git add *
 $ git commit
 ```
 
+Note that running git commit will open a text editor (defaults to VI but can be changed: https://www.oreilly.com/library/view/gitlab-cookbook/9781783986842/apas07.html). Write your commit message at the top. You can see all changes staged for commit below (the same thing you'd see when running git status). Double check that the list of files staged for commit is correct! After saving the file, confirm that there are no errors.
+
 Finally, we deploy our app to Heroku:
 
 ```sh
@@ -42,6 +44,8 @@ $ git push heroku master
     RSA key fingerprint is 8b:48:5e:67:0e:c9:16:47:32:f2:87:0c:1f:c8:60:ad.
     Are you sure you want to continue connecting (yes/no)? 
     Please type 'yes' or 'no':
+
+You will see some warnings, but none are critical in most cases.
 
 Is the app running on Heroku?  If you navigate to the heroku URL that is printed at the end of the results from `git push heroku master` you'll get a "We're sorry, but something went wrong." error in the browser.  
 
