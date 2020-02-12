@@ -1,5 +1,8 @@
 ## Part 1: Sort the list of movies (15 points)
 
+Reminder: Every time you make a semi-significant change, push your code to github IF AND ONLY IF it is working. 
+Go to your homework folder, run `git status`, confirm that changed files are staged for commit. `git commit -m "SOME MEANINGFUL MESSAGE"` `git push origin master`  PUSH OFTEN!
+
 On the list of all movies page, make the column headings for "Movie Title" and "Release Date" into clickable links. Clicking one of them should cause the list to be reloaded but sorted in ascending order on that column. For example, clicking the "release date" column heading should redisplay the list of movies with the earliest-released movies first; clicking the "title" header should list the movies alphabetically by title. (For movies whose names begin with non-letters, the sort order should match the behavior of `String#<=>`.)
 
 When the listing page is redisplayed with sorting-on-a-column enabled, the column header that was selected for sorting should appear with a yellow background, as shown below. You should do this by setting controller variables that are used to conditionally set the CSS class of the appropriate table heading to `hilite`, and pasting this simple CSS into RottenPotatoes `app/assets/stylesheets/default.css` file:
@@ -26,11 +29,11 @@ The link (that is, the `<a>` tag) for sorting by "title" should have the HTML el
 
 * Don't put code in your views! The view shouldn't have to sort the collection itself--its job is just to show stuff. The controller should spoon-feed the view exactly what is to be displayed.  
 
-### Submission
+### Finishing Part 1
 
 You'll submit the code for this part after you deploy on Heroku and when you supply your Heroku deployment URL in part 3.
 
-For now, commit all the changes you have made so far, and deploy them to check that they work on Heroku before moving on to the next section:
+For now, commit all the changes you have made so far (see the beginning of this part), and deploy them to check that they work on Heroku before moving on to the next section:
 
 ```sh
 $ git commit -am "part 1 complete"
