@@ -66,13 +66,13 @@ ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "movies" does 
 Just as we ran `rake db:migrate` and `rake db:seed` to do first-time database creation locally, we must also cause a database to be created on the Heroku side:
 
 ```sh
-$ heroku run rake db:migrate
+$ heroku rake db:migrate
 ```
 
 and
 
 ```sh
-$ heroku run rake db:seed
+$ heroku rake db:seed
 ```
 
 Now you should be able to navigate to your app's URL.  `heroku open` opens your browser to that URL in case you forgot it, however this command does not work on c9, where you will need to navigate to the relevant URL.
