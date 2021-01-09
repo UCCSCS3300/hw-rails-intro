@@ -41,7 +41,7 @@ $ rake db:seed
 </details>
 <br />
 
-At this point you should be able to run the app locally (`rails server -b 0.0.0.0`) and navigate to `http://localhost:3000/movies` in your browser.  
+At this point you should be able to run the app locally (`rails server -b 0.0.0.0 -p 8080`) and navigate to `http://URL:8080/movies` in your browser.  
 **For those using Docker Toolbox, go to `http://192.168.99.100:3000/movies` as in prior examples**  
 **If you are using Codenvy, use the play button and navigate to the link generated within codenvy**.
 Note: If you stop the server by hitting control-C, you will no longer be able to visit the RottenPotatoes site. Start the server again by repeating the last command. 
